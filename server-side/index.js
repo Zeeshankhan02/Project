@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(cors(
   {
-    origin:  "https://client-side-woad.vercel.app/",
+    origin:  "https://client-side-woad.vercel.app",
     methods: ["POST", "GET"],
     credentials: true
   }
@@ -18,6 +18,8 @@ mongoose.connect(
 
 app.post(`/`, (req, res) => {
   UserModel.create(req.body)
+    .then(response => {
+      res.header("Access-Control-Allow-Origin", "https://client-side-woad.vercel.app")})
     .then((users) => res.json(users))
     .catch((err) => res.json(err));
 });
