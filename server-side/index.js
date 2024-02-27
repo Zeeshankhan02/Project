@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(cors(
   {
-    origin:  "https://client-side-woad.vercel.app",
+    origin:  "http://localhost:5173",
     methods: ["POST", "GET"],
     credentials: true
   }
