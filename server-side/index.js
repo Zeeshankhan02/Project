@@ -17,7 +17,7 @@ mongoose.connect(
   "mongodb+srv://ZeeshanKhan:Zxcvbnm@cluster0.jxlmfoz.mongodb.net/NewsHub?retryWrites=true&w=majority&appName=Cluster0"
 );
 
-app.post(`/`, (req, res) => {
+app.post(`/si`, (req, res) => {
   UserModel.create(req.body)
     
     .then((users) => res.json(users))
