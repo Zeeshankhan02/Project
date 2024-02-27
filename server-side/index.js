@@ -21,7 +21,7 @@ mongoose.connect(
   { useNewUrlParser: true, useUnifiedTopology: true }
 );
 
-app.post(`/`, (req, res) => {
+app.post(`/signIn`, (req, res) => {
   UserModel.create(req.body)
     .then((user) => res.json(user))
     .catch((err) => res.status(400).json(err));
