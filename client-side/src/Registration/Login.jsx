@@ -15,7 +15,7 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post('https://server-side-zeta-seven.vercel.app/logIn', { email, password })
+      .post('https://baigan-rose.vercel.app/logIn', { email, password })
       .then((result) => {
         console.log(result);
         if(result.data ==="Success"){
