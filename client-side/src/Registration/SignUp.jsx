@@ -16,7 +16,7 @@ function SignUp() {
 
   const handleSubmit =(e) =>{
     e.preventDefault()
-    axios.post('https://server-side-zeta-seven.vercel.app/',{name,email,password})
+    axios.post('https://baigan-rose.vercel.app.app/',{name,email,password})
     .then(result => {
       // console.log(result)
       
