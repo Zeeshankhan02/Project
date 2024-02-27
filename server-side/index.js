@@ -18,8 +18,7 @@ mongoose.connect(
 
 app.post(`/`, (req, res) => {
   UserModel.create(req.body)
-    .then(response => {
-      res.header("Access-Control-Allow-Origin", "https://client-side-woad.vercel.app")})
+    
     .then((users) => res.json(users))
     .catch((err) => res.json(err));
 });
