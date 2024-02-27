@@ -16,7 +16,7 @@ function SignUp() {
 
   const handleSubmit =(e) =>{
     e.preventDefault()
-    axios.post('https://baigan-rose.vercel.app.app/signIn',{name,email,password})
+    axios.post('https://baigan-rose.vercel.app/',{name,email,password})
     .then(result => {
       // console.log(result)
       
