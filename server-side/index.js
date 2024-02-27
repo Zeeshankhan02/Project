@@ -5,14 +5,10 @@ const cors = require("cors");
 
 const app = express();
 app.use(express.json());
-app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "X-Requested-With");
-  next();
-  });
+
 app.use(cors(
   {
-    origin:  'http://localhost:5173',
+    origin: `http://localhost:5173`,
     methods: ["POST", "GET"],
     credentials: true
   }
