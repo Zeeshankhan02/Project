@@ -21,7 +21,7 @@ function Login() {
         if(result.data ==="Success"){
           navigate("/home");
 
-          setTimeout(()=>alert("Successfully logedIn"),2400)
+          setTimeout(()=>alert("Successfully Logged In "),2200)
   
         }else if(result.data === "Incorrect Password"){
           alert(`${result.data}`);

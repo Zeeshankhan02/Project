@@ -37,7 +37,7 @@ function SignUp() {
                 type="text"
                 placeholder="Name"
                 onChange={(e) => setName(e.target.value)}
-                
+                required
               />
             </div>
             <div className="input-field">
@@ -46,7 +46,7 @@ function SignUp() {
                 type="email"
                 placeholder="E-mail"
                 onChange={(e) => setEmail(e.target.value)}
-                
+                required
               />
             </div>
             <div className="input-field">
@@ -55,7 +55,7 @@ function SignUp() {
                 type="password"
                 placeholder="Password"
                 onChange={(e) => setPassword(e.target.value)}
-                
+                required
               />
             </div>
           </div>
