@@ -10,7 +10,7 @@
 
 @media (max-width:600px) {
 .main {
-    background-size: cover;
+    background-size: contain;
     background-position: -445px;
 }
 }
