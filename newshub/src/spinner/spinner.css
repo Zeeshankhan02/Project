@@ -13,8 +13,8 @@
 }
 
 .spinner {
-    width: 3em;
-    height: 3em;
+    width: 2.3em;
+    height: 2.3em;
     border-radius: 50%;
     position: relative;
     animation: rotate 1s linear infinite

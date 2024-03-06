@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
 import "./Home.css";
-import Spinner from './spinner/spinner';
+import HomeSpinner from './HomeSpinner/HomeSpinner';
 
 export const Navbar = ({ setCategory }) => {
   const [loading, setLoading] = useState(false);
 
   const handleClick = (category) => {
-    setLoading(true); // Show loader when category is clicked
+    setLoading(true); 
     setCategory(category);
 
-    // Hide loader after 2 seconds
     setTimeout(() => {
       setLoading(false);
     }, 2000);
@@ -36,7 +35,7 @@ export const Navbar = ({ setCategory }) => {
           </ul>
         </div>
       </div>
-      {loading && <Spinner ></Spinner>}
+      {loading && <HomeSpinner ></HomeSpinner>}
     </div>
   );
 };
