@@ -8,7 +8,7 @@ function Home() {
   const[category,setCategory] = useState("general")
 
   useEffect(() => {
-    let url = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=4b4cbd000adf4c49a6bf8c2bb1c2336e`;
+    let url = `https://gnews.io/api/v4/top-headlines?category=${category}&lang=en&country=in&apikey=0c1597301f2e627054a8b2e9cf85c554`;
     fetch(url)
       .then((response) => response.json())
       .then((data) => setArticle(data.articles));
@@ -18,13 +18,13 @@ function Home() {
     <>
     <Navbar setCategory={setCategory}/>
     {articles.map((news, index) => {
-        if (news.title && news.description && news.urlToImage) {
+        if (news.title && news.description && news.image) {
           return (
             <NewsItem
               key={index}
               title={news.title}
               description={news.description}
-              src={news.urlToImage}
+              src={news.image}
               url={news.url}
             />
           );
