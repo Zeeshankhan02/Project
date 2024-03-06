@@ -1,0 +1,42 @@
+import React, { useState } from 'react';
+import "./Home.css";
+import Spinner from './spinner/spinner';
+
+export const Navbar = ({ setCategory }) => {
+  const [loading, setLoading] = useState(false);
+
+  const handleClick = (category) => {
+    setLoading(true); // Show loader when category is clicked
+    setCategory(category);
+
+    // Hide loader after 2 seconds
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  };
+
+  return (
+    <div>
+      <div className="navbar">
+        <div className="logo"></div>
+        <div className="navitems">
+          <ul>
+            <li>
+              <div className='nav-link' onClick={() => handleClick("general")}>Home</div>
+            </li>
+            <li>
+              <div className='nav-link' onClick={() => handleClick("sports")}>Sports</div>
+            </li>
+            <li>
+              <div className='nav-link' onClick={() => handleClick("technology")}>Technology</div>
+            </li>
+            <li>
+              <div className='nav-link' onClick={() => handleClick("politics")}>Politics</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      {loading && <Spinner ></Spinner>}
+    </div>
+  );
+};
