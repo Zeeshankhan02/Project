@@ -128,7 +128,8 @@ form {
   }
   .container{
     background-image: url(../assets/mobilebgImage.png);
-    height: 90vh;
+    position: relative;
+    height: 93vh;
    
 
   }

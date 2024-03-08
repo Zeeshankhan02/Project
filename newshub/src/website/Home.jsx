@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
-import "./Home.css";
+import "./Navbar-Newsitem.css";
 import { NewsItem } from "./NewsItem";
 import { Navbar } from "./Navbar";
+
+
 
 function Home() {
   const [articles, setArticle] = useState([]);

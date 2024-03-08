@@ -1,0 +1,195 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: lightgray;
+}
+.navbar{
+  height: 12vh;
+  background: #7161FF;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.navbar .logo{
+  background-image: url(../assets/favicon.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 90%;
+  background-position:-4px -3px;
+  width: 13vw;
+}
+
+.navitems ul {
+  display: flex;
+  list-style: none;
+  margin-left: 22rem;
+}
+.navitems ul li{
+  margin-left: 2rem;
+}
+
+.nav-link{
+  padding: 25px 10px 25px 10px;
+  font-size: 18.5px;
+  color: white;
+  font-family: cursive;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.news-item{
+  height: 350px;
+  width: 20%;
+  margin: 15px 25px 15px 25px  ;
+  background: rgb(213, 207, 207);
+  display: inline-block;
+  border-radius: 14px 14px ;
+  outline: 1px solid black;
+  transition: 0.2s all;
+  cursor: pointer;
+  overflow: hidden;
+
+}
+
+.news-item img{
+  height: 50%;
+  width: 100%;
+  margin-bottom: 4px;
+  border-bottom:2px solid black ;
+ 
+}
+.news-item h3{
+  margin-left:5px;
+  margin-right:5px;
+  margin-bottom: 2px;
+  border-bottom: 1px solid black;
+  font-size: 16px;
+}
+.news-item p{
+  margin-top: 6px;
+  margin-left:5px;
+  line-height: 17px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.618);
+}
+.news-item p b{
+  font-size: 14px;
+}
+.news-item:hover{
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  transform: scale(1.02);
+  outline: none;
+}
+
+#burger{
+  display: none;
+}
+@media (max-width:600px) {
+
+  .navbar{
+      height: 8vh;
+      overflow: hidden;
+      margin-bottom: 16px;
+  }
+  .navbar .logo{
+      background-position: -10px -3px;
+      width: 160px;
+      left: 16px;
+      top:13px
+  
+  }
+
+  .news-item{
+      border-bottom: 2px solid black;
+      margin: 4px;
+      width: 48%;
+      height: 350px;
+  }
+
+
+    #burger{
+        display: inline-block;
+    }
+    .navbar {
+        height: 8vh;
+        overflow: hidden;
+        margin-bottom: 16px;
+        background: #7161ff;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .navbar .logo {
+        background-position: -10px -3px;
+        width: 160px;
+        height: 70px;
+        position: relative;
+        left: -40px;
+        top: 2px;
+        background-image: url(../assets/favicon.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .j{
+        font-size: 28px;
+        float: left;
+        color: white;
+        margin-left: 26px;
+        position: relative;
+        right: -35px;
+      }
+      
+      .mobile-navitems {
+        display: none;
+      }
+      .mobile-navitems.open {
+        display: block;
+        position: absolute;
+        right: 3px;
+        top: 68px;
+        z-index: 4;
+        width: 180px;
+        box-shadow: -10px 6px 16px -4px rgba(68, 67, 67, 0.537);
+        border-bottom-left-radius: 16px;
+      }
+      
+      .mobile-navitems ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+        border-bottom-left-radius: 16px;
+        outline: 1px solid black;
+        width: 100%;
+      }
+      
+      .mobile-navitems li {
+        width: 100%;
+        text-align: center;
+      }
+      .mobile-nav-link {
+        cursor: pointer;
+        padding: 24px 24px 12px 24px;
+      font-size:18px ;
+        background-color: #7161ffd2;
+        color: white;
+        font-family:serif;
+        border-bottom: 1px solid black;
+      }
+      
+      
+      #two {
+        border-bottom-left-radius: 16px;
+      }
+      
+    .navitems{
+        display: none;
+    }
+}
