@@ -105,8 +105,8 @@ body{
 
   .news-item{
       border-bottom: 2px solid black;
-      margin: 4px;
-      width: 48%;
+      margin:0.4em 0.2em 0.4em 0.4em;
+      min-width:10.86rem;
       height: 350px;
   }
 
