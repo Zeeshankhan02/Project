@@ -41,6 +41,11 @@ body{
   cursor: pointer;
 }
 
+/* .center{
+  background: black;;
+  display: inline;
+} */
+
 .news-item{
   height: 350px;
   width: 20%;
