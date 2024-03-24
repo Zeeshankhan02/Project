@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./Navbar-Newsitem.css";
 import { NewsItem } from "./NewsItem";
 import { Navbar } from "./Navbar";
+import Footer from "./Footer";
+
 
 
 
@@ -34,6 +36,7 @@ function Home() {
           return null;
         }
       })}
+      <Footer/>
 
     </>
   );
